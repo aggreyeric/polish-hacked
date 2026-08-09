@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 14 — Health & The Pharmacy · Polish Hacked</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<div class="book">
+
+  <nav class="lesson-nav">
+    <a href="L13.html">← Lesson 13</a>
+    <a href="../index.html">↑ Table of Contents</a>
+    <a href="L15.html">Lesson 15 →</a>
+  </nav>
+
+  <div class="progress-dots">
+    <span class="progress-dot done"></span><span class="progress-dot done"></span>
+    <span class="progress-dot done"></span><span class="progress-dot done"></span>
+    <span class="progress-dot done"></span><span class="progress-dot done"></span>
+    <span class="progress-dot done"></span><span class="progress-dot done"></span>
+    <span class="progress-dot done"></span><span class="progress-dot done"></span>
+    <span class="progress-dot done"></span><span class="progress-dot done"></span>
+    <span class="progress-dot done"></span><span class="progress-dot active"></span><span class="progress-dot"></span>
+  </div>
+
+  <header class="lesson-header">
+    <span class="lesson-badge">Phase 4 · Function</span>
+    <h2>Health &amp; The Pharmacy</h2>
+    <p class="lesson-subtitle">Body parts, symptoms, and the pharmacy script that gets you medicine</p>
+  </header>
+
+  <!-- VIDEO -->
+  <div class="video-section">
+    <div class="video-player" id="video-player">
+      <div class="video-placeholder">
+        <div class="icon">🎬</div>
+        <div class="text">Video coming soon — <code>../videos/L14.mp4</code></div>
+      </div>
+    </div>
+    <p class="video-caption">Lesson 14 video · sabiedu on camera</p>
+  </div>
+
+  <!-- BODY PARTS -->
+  <div class="section">
+    <h3>Body Parts — Części Ciała</h3>
+    <p>Know these not for anatomy — for telling a doctor or pharmacist where it hurts. Each one pairs with "boli mnie" (it hurts me) + the body part.</p>
+    <div class="vocab-grid">
+      <div class="vocab-card">
+        <div class="pl">Głowa</div>
+        <div class="ipa">/ˈɡwava/</div>
+        <div class="en">head</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Brzuch</div>
+        <div class="ipa">/ˈbʐux/</div>
+        <div class="en">stomach / belly</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Gardło</div>
+        <div class="ipa">/ˈɡardwɔ/</div>
+        <div class="en">throat</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Ręka</div>
+        <div class="ipa">/ˈrɛŋka/</div>
+        <div class="en">hand / arm</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Noga</div>
+        <div class="ipa">/ˈnɔɡa/</div>
+        <div class="en">leg / foot</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Plecy</div>
+        <div class="ipa">/ˈplɛt͡sɨ/</div>
+        <div class="en">back (plural only)</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Ząb</div>
+        <div class="ipa">/zɔmp/</div>
+        <div class="en">tooth</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Ucho</div>
+        <div class="ipa">/ˈuxɔ/</div>
+        <div class="en">ear</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Oko</div>
+        <div class="ipa">/ˈɔkɔ/</div>
+        <div class="en">eye</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Nos</div>
+        <div class="ipa">/nɔs/</div>
+        <div class="en">nose</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- KEY PHRASES -->
+  <div class="section">
+    <h3>Key Health Phrases</h3>
+    <table class="case-table">
+      <thead>
+        <tr>
+          <th>Polish</th>
+          <th>English</th>
+          <th>When to use</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="pl-cell">Źle się czuję</td>
+          <td>I feel bad / I feel unwell</td>
+          <td>General malaise — the opening line</td>
+        </tr>
+        <tr>
+          <td class="pl-cell">Jestem chory (m) / chora (f)</td>
+          <td>I'm sick</td>
+          <td>Stating you're ill — choose by gender</td>
+        </tr>
+        <tr>
+          <td class="pl-cell">Gdzie boli?</td>
+          <td>Where does it hurt?</td>
+          <td>Doctor asks you this</td>
+        </tr>
+        <tr>
+          <td class="pl-cell">Boli mnie głowa</td>
+          <td>My head hurts</td>
+          <td>Pattern: <em>boli mnie</em> + body part</td>
+        </tr>
+        <tr>
+          <td class="pl-cell">Od kiedy?</td>
+          <td>Since when?</td>
+          <td>Doctor asks when symptoms started</td>
+        </tr>
+        <tr>
+          <td class="pl-cell">Od wczoraj / Od dwóch dni</td>
+          <td>Since yesterday / For two days</td>
+          <td>Answering "od kiedy"</td>
+        </tr>
+        <tr>
+          <td class="pl-cell">Proszę brać ten lek</td>
+          <td>Take this medicine</td>
+          <td>Doctor or pharmacist giving instructions</td>
+        </tr>
+        <tr>
+          <td class="pl-cell">Potrzebuję czegoś na…</td>
+          <td>I need something for…</td>
+          <td>At pharmacy — + accusative</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- SYMPTOMS -->
+  <div class="section">
+    <h3>Symptoms — Objawy</h3>
+    <p>Compound nouns in Polish: many symptoms are "ból" (pain) + the genitive of the body part.</p>
+    <div class="vocab-grid">
+      <div class="vocab-card">
+        <div class="pl">Ból głowy</div>
+        <div class="ipa">/bul ˈɡwɔvɨ/</div>
+        <div class="en">headache</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Gorączka</div>
+        <div class="ipa">/ɡɔˈrɔ̃t͡ʂka/</div>
+        <div class="en">fever</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Kaszel</div>
+        <div class="ipa">/ˈkaʂɛl/</div>
+        <div class="en">cough</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Katar</div>
+        <div class="ipa">/ˈkatar/</div>
+        <div class="en">runny nose</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Ból brzucha</div>
+        <div class="ipa">/bul ˈbʐuxa/</div>
+        <div class="en">stomachache</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Ból gardła</div>
+        <div class="ipa">/bul ˈɡardwa/</div>
+        <div class="en">sore throat</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PHARMACY SCRIPT -->
+  <div class="section">
+    <h3>Pharmacy Script — Apteka</h3>
+    <p>The pattern you need at the counter: <em>Potrzebuję czegoś na</em> + accusative. The accusative is the same case you learned in Lesson 6 — the "direct object" case.</p>
+    <table class="case-table">
+      <thead>
+        <tr>
+          <th>Polish</th>
+          <th>English</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="pl-cell">Potrzebuję czegoś na ból głowy</td>
+          <td>I need something for a headache</td>
+        </tr>
+        <tr>
+          <td class="pl-cell">Potrzebuję czegoś na kaszel</td>
+          <td>I need something for a cough</td>
+        </tr>
+        <tr>
+          <td class="pl-cell">Potrzebuję czegoś na gorączkę</td>
+          <td>I need something for a fever</td>
+        </tr>
+        <tr>
+          <td class="pl-cell">Mam uczulenie na…</td>
+          <td>I'm allergic to…</td>
+        </tr>
+        <tr>
+          <td class="pl-cell">Czy to jest na receptę?</td>
+          <td>Is this by prescription?</td>
+        </tr>
+        <tr>
+          <td class="pl-cell">Bez recepty</td>
+          <td>Without a prescription (over the counter)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="tip-box">
+    <div class="tip-label">💡 Emergency Numbers in Poland</div>
+    <p>European emergency number: <strong>112</strong> (works for all services — ambulance, police, fire). If you need an ambulance specifically in Poland, you can also say "<em>Potrzebuję pomocy medycznej</em>" (I need medical help). The pharmacy ("apteka") is marked with a green cross — and many are open 24/7 in larger cities.</p>
+  </div>
+
+  <!-- ALL VOCAB -->
+  <div class="section">
+    <h3>All 25 Vocabulary Words</h3>
+    <div class="vocab-grid">
+      <div class="vocab-card">
+        <div class="pl">Głowa</div>
+        <div class="ipa">/ˈɡwava/</div>
+        <div class="en">head</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Brzuch</div>
+        <div class="ipa">/ˈbʐux/</div>
+        <div class="en">stomach</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Gardło</div>
+        <div class="ipa">/ˈɡardwɔ/</div>
+        <div class="en">throat</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Ręka</div>
+        <div class="ipa">/ˈrɛŋka/</div>
+        <div class="en">hand / arm</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Noga</div>
+        <div class="ipa">/ˈnɔɡa/</div>
+        <div class="en">leg / foot</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Plecy</div>
+        <div class="ipa">/ˈplɛt͡sɨ/</div>
+        <div class="en">back</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Ząb</div>
+        <div class="ipa">/zɔmp/</div>
+        <div class="en">tooth</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Ucho</div>
+        <div class="ipa">/ˈuxɔ/</div>
+        <div class="en">ear</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Oko</div>
+        <div class="ipa">/ˈɔkɔ/</div>
+        <div class="en">eye</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Nos</div>
+        <div class="ipa">/nɔs/</div>
+        <div class="en">nose</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Ból głowy</div>
+        <div class="ipa">/bul ˈɡwɔvɨ/</div>
+        <div class="en">headache</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Gorączka</div>
+        <div class="ipa">/ɡɔˈrɔ̃t͡ʂka/</div>
+        <div class="en">fever</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Kaszel</div>
+        <div class="ipa">/ˈkaʂɛl/</div>
+        <div class="en">cough</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Katar</div>
+        <div class="ipa">/ˈkatar/</div>
+        <div class="en">runny nose</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Ból brzucha</div>
+        <div class="ipa">/bul ˈbʐuxa/</div>
+        <div class="en">stomachache</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Apteka</div>
+        <div class="ipa">/apˈtɛka/</div>
+        <div class="en">pharmacy</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Lekarz</div>
+        <div class="ipa">/ˈlɛkaʐ/</div>
+        <div class="en">doctor (m)</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Lek / Leki</div>
+        <div class="ipa">/lɛk/</div>
+        <div class="en">medicine / medicines</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Recepta</div>
+        <div class="ipa">/rɛˈt͡sɛpta/</div>
+        <div class="en">prescription</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Chory / Chora</div>
+        <div class="ipa">/ˈxɔrɨ/</div>
+        <div class="en">sick (m / f)</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Uczulenie</div>
+        <div class="ipa">/uˈt͡ʃulɛɲɛ/</div>
+        <div class="en">allergy</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Zdrowie</div>
+        <div class="ipa">/ˈzdɔvʲɛ/</div>
+        <div class="en">health</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Szpital</div>
+        <div class="ipa">/ˈʂpʲital/</div>
+        <div class="en">hospital</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Pomoc</div>
+        <div class="ipa">/ˈpɔmɔt͡s/</div>
+        <div class="en">help / assistance</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Boli mnie</div>
+        <div class="ipa">/ˈbɔlʲi ɲɛ/</div>
+        <div class="en">it hurts me</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="drill-box">
+    <div class="drill-label">🎯 Speaking Drill</div>
+    <div class="drill-text">Pharmacy roleplay. Walk into an <em>apteka</em>. Tell the pharmacist you feel unwell ("<em>Źle się czuję</em>"). Describe two symptoms using the pattern "<em>boli mnie</em> + body part" and one compound symptom ("<em>mam ból głowy i kaszel</em>"). Ask for medicine: "<em>Potrzebuję czegoś na ból głowy</em>." Say you're not allergic: "<em>Nie mam uczulenia</em>." Do the full exchange aloud — at least 5 vocab words used.</div>
+  </div>
+
+  <footer class="book-footer">
+    <div class="brand">sabiedu · sabiedu.online</div>
+    <div class="meta">Polish Hacked — Lesson 14 · 2026</div>
+  </footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 6 — Case System Hacked I · Polish Hacked</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<div class="book">
+
+  <nav class="lesson-nav">
+    <a href="L05.html">← Lesson 5</a>
+    <a href="../index.html">↑ Table of Contents</a>
+    <a href="L07.html">Lesson 7 →</a>
+  </nav>
+
+  <div class="progress-dots">
+    <span class="progress-dot done"></span>
+    <span class="progress-dot done"></span>
+    <span class="progress-dot done"></span>
+    <span class="progress-dot done"></span>
+    <span class="progress-dot done"></span>
+    <span class="progress-dot active"></span>
+    <span class="progress-dot"></span>
+    <span class="progress-dot"></span>
+  </div>
+
+  <header class="lesson-header">
+    <span class="lesson-badge">Phase 2 · Patterns</span>
+    <h2>Case System, Hacked I: Nominative → Accusative</h2>
+    <p class="lesson-subtitle">The "doing something to something" case — learned in sentences, not tables</p>
+  </header>
+
+  <!-- VIDEO -->
+  <div class="video-section">
+    <div class="video-player" id="video-player">
+      <div class="video-placeholder">
+        <div class="icon">🎬</div>
+        <div class="text">Video coming soon — <code>../videos/L06.mp4</code></div>
+      </div>
+    </div>
+    <p class="video-caption">Lesson 6 video · sabiedu on camera</p>
+  </div>
+
+  <div class="section">
+    <h3>Why Polish Has Cases (And Why It's Easier Than It Looks)</h3>
+    <p>Polish nouns change their endings depending on their role in the sentence. That's it. That's what "cases" are. English does this with word order ("The man sees the dog" vs "The dog sees the man"). Polish does it with word endings instead.</p>
+    <p>You already know the <strong>Nominative</strong> case — it's the dictionary form of every noun. That's what you've been learning. Now you need the <strong>Accusative</strong> — the form a noun takes when something is <em>done to it</em> (it's the direct object of a verb).</p>
+  </div>
+
+  <div class="tip-box">
+    <div class="tip-label">💡 The Only Rule That Matters</div>
+    <p>For the Accusative, there's one key split: <strong>animate masculine</strong> nouns (people, animals) get one ending, and <strong>everything else</strong> (inanimate masculine, feminine, neuter) gets another. In practice, the only big change is masculine singular. Feminine stays the same or adds -ę. Neuter is identical to nominative. You'll absorb the patterns naturally from examples.</p>
+  </div>
+
+  <div class="section">
+    <h3>The Pattern: Subject + Verb + Accusative Object</h3>
+    <p>Every sentence in this pattern uses the Accusative on the object:</p>
+
+    <table class="case-table">
+      <thead>
+        <tr>
+          <th>Nominative (dictionary)</th>
+          <th>Accusative (object)</th>
+          <th>Example Sentence</th>
+          <th>English</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="pl-cell">kawa (f)</td>
+          <td class="pl-cell">kawę</td>
+          <td>Mam kawę</td>
+          <td>I have coffee</td>
+        </tr>
+        <tr>
+          <td class="pl-cell">bilet (m)</td>
+          <td class="pl-cell">bilet</td>
+          <td>Kupuję bilet</td>
+          <td>I'm buying a ticket</td>
+        </tr>
+        <tr>
+          <td class="pl-cell">chleb (m)</td>
+          <td class="pl-cell">chleb</td>
+          <td>Jem chleb</td>
+          <td>I'm eating bread</td>
+        </tr>
+        <tr>
+          <td class="pl-cell">woda (f)</td>
+          <td class="pl-cell">wodę</td>
+          <td>Piję wodę</td>
+          <td>I'm drinking water</td>
+        </tr>
+        <tr>
+          <td class="pl-cell">kot (m, animate)</td>
+          <td class="pl-cell">kota</td>
+          <td>Widzę kota</td>
+          <td>I see the cat</td>
+        </tr>
+        <tr>
+          <td class="pl-cell">książka (f)</td>
+          <td class="pl-cell">książkę</td>
+          <td>Czytam książkę</td>
+          <td>I'm reading a book</td>
+        </tr>
+        <tr>
+          <td class="pl-cell">samochód (m)</td>
+          <td class="pl-cell">samochód</td>
+          <td>Mam samochód</td>
+          <td>I have a car</td>
+        </tr>
+        <tr>
+          <td class="pl-cell">dom (m)</td>
+          <td class="pl-cell">dom</td>
+          <td>Widzę dom</td>
+          <td>I see a house</td>
+        </tr>
+        <tr>
+          <td class="pl-cell">pieniądze (pl)</td>
+          <td class="pl-cell">pieniądze</td>
+          <td>Mam pieniądze</td>
+          <td>I have money</td>
+        </tr>
+        <tr>
+          <td class="pl-cell">czas (m)</td>
+          <td class="pl-cell">czas</td>
+          <td>Mam czas</td>
+          <td>I have time</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h3>Accusative Endings — Quick Reference</h3>
+    <table class="case-table">
+      <thead>
+        <tr>
+          <th>Gender</th>
+          <th>Nominative ending</th>
+          <th>Accusative ending</th>
+          <th>Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Masc. inanimate</td>
+          <td>- consonant</td>
+          <td>= Nominative (no change!)</td>
+          <td>dom → dom</td>
+        </tr>
+        <tr>
+          <td>Masc. animate (people/animals)</td>
+          <td>- consonant</td>
+          <td>-a</td>
+          <td>kot → kota, brat → brata</td>
+        </tr>
+        <tr>
+          <td>Masc. personal (-a)</td>
+          <td>-a</td>
+          <td>-ę</td>
+          <td>kolega → kolegę</td>
+        </tr>
+        <tr>
+          <td>Feminine (-a)</td>
+          <td>-a</td>
+          <td>-ę</td>
+          <td>kawa → kawę, woda → wodę</td>
+        </tr>
+        <tr>
+          <td>Feminine (-i/-y consonant)</td>
+          <td>consonant</td>
+          <td>= Nominative (no change!)</td>
+          <td>noc → noc, mysz → mysz</td>
+        </tr>
+        <tr>
+          <td>Neuter</td>
+          <td>-o / -e</td>
+          <td>= Nominative (no change!)</td>
+          <td>okno → okno, piwo → piwo</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h3>30 Nouns in Accusative</h3>
+    <div class="vocab-grid">
+      <div class="vocab-card">
+        <div class="pl">Kawę</div>
+        <div class="ipa">/ˈkavɛ̃wɛ/</div>
+        <div class="en">coffee (acc.) — Mam kawę</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Bilet</div>
+        <div class="ipa">/ˈbʲilɛt/</div>
+        <div class="en">ticket (acc.) — Kupuję bilet</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Chleb</div>
+        <div class="ipa">/xlɛp/</div>
+        <div class="en">bread (acc.) — Jem chleb</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Wodę</div>
+        <div class="ipa">/ˈvɔdɛ̃wɛ/</div>
+        <div class="en">water (acc.) — Piję wodę</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Kota</div>
+        <div class="ipa">/ˈkɔta/</div>
+        <div class="en">cat (acc.) — Widzę kota</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Książkę</div>
+        <div class="ipa">/ˈkɕɔ̃ʐkɛ/</div>
+        <div class="en">book (acc.) — Czytam książkę</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Samochód</div>
+        <div class="ipa">/samɔˈxut/</div>
+        <div class="en">car (acc.) — Mam samochód</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Dom</div>
+        <div class="ipa">/dɔm/</div>
+        <div class="en">house (acc.) — Widzę dom</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Pieniądze</div>
+        <div class="ipa">/pʲɛɲɔ̃ʐd͡ʑɛ/</div>
+        <div class="en">money (acc.) — Mam pieniądze</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Herbatę</div>
+        <div class="ipa">/xɛrˈbatɛ/</div>
+        <div class="en">tea (acc.) — Piję herbatę</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Telefon</div>
+        <div class="ipa">/tɛˈlɛfɔn/</div>
+        <div class="en">phone (acc.) — Mam telefon</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Czas</div>
+        <div class="ipa">/t͡sas/</div>
+        <div class="en">time (acc.) — Mam czas</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Pomysł</div>
+        <div class="ipa">/ˈpɔmɨswat/</div>
+        <div class="en">idea (acc.) — Mam pomysł</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Kolegę</div>
+        <div class="ipa">/kɔˈlɛɡɛ/</div>
+        <div class="en">colleague (acc.) — Widzę kolegę</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Pizza</div>
+        <div class="ipa">/ˈpit͡sa/</div>
+        <div class="en">pizza (acc.) — Jem pizzę</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Taksi</div>
+        <div class="ipa">/ˈtakɕi/</div>
+        <div class="en">taxi (acc.) — Wołam taksówkę</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Lekcje</div>
+        <div class="ipa">/ˈlɛkt͡sɔ̃jɛ/</div>
+        <div class="en">lesson (acc.) — Mam lekcję</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Zadanie</div>
+        <div class="ipa">/zaˈdaɲɛ/</div>
+      <div class="en">task (acc.) — Robię zadanie</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Pies</div>
+        <div class="ipa">/pʲɛs/</div>
+        <div class="en">dog (acc.) — Widzę psa</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Pole</div>
+        <div class="ipa">/ˈpɔlɛ/</div>
+        <div class="en">field (acc.) — Widzę pole</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Sok</div>
+        <div class="ipa">/sɔk/</div>
+        <div class="en">juice (acc.) — Piję sok</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Mleko</div>
+        <div class="ipa">/ˈmlɛkɔ/</div>
+        <div class="en">milk (acc.) — Piję mleko</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Piwo</div>
+        <div class="ipa">/ˈpivɔ/</div>
+        <div class="en">beer (acc.) — Piję piwo</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Obiad</div>
+        <div class="ipa">/ˈɔbʲat/</div>
+        <div class="en">lunch/dinner (acc.) — Jem obiad</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Paczkę</div>
+        <div class="ipa">/ˈpat͡ʂkɛ/</div>
+        <div class="en">parcel (acc.) — Mam paczkę</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">List</div>
+        <div class="ipa">/list/</div>
+        <div class="en">letter (acc.) — Piszę list</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Powiadomienie</div>
+        <div class="ipa">/pɔvʲadɔˈmʲɛɲɛ/</div>
+        <div class="en">notification (acc.) — Mam powiadomienie</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Auto</div>
+        <div class="ipa">/ˈawtɔ/</div>
+        <div class="en">car (acc., informal) — Mam auto</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Klucz</div>
+        <div class="ipa">/klut͡ʂ/</div>
+        <div class="en">key (acc.) — Mam klucz</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Okno</div>
+        <div class="ipa">/ˈɔknɔ/</div>
+        <div class="en">window (acc.) — Otwieram okno</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="drill-box">
+    <div class="drill-label">🎯 Speaking Drill</div>
+    <div class="drill-text">Create 15 sentences using the patterns "I have / I want / I buy" with accusative objects. Use at least 5 different nouns for each verb. Say each aloud: <em>Mam kawę. Chcę bilet. Kupuję chleb. Mam psa. Piję wodę.</em> Focus on the accusative ending — does it change from the dictionary form or not?</div>
+  </div>
+
+  <footer class="book-footer">
+    <div class="brand">sabiedu · sabiedu.online</div>
+    <div class="meta">Polish Hacked — Lesson 6 · 2026</div>
+  </footer>
+
+</div>
+</body>
+</html>

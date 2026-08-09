@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 13 — Shopping & Transactions · Polish Hacked</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<div class="book">
+
+  <nav class="lesson-nav">
+    <a href="L12.html">← Lesson 12</a>
+    <a href="../index.html">↑ Table of Contents</a>
+    <a href="L14.html">Lesson 14 →</a>
+  </nav>
+
+  <div class="progress-dots">
+    <span class="progress-dot done"></span>
+    <span class="progress-dot done"></span>
+    <span class="progress-dot done"></span>
+    <span class="progress-dot done"></span>
+    <span class="progress-dot done"></span>
+    <span class="progress-dot done"></span>
+    <span class="progress-dot done"></span>
+    <span class="progress-dot done"></span>
+    <span class="progress-dot done"></span>
+    <span class="progress-dot done"></span>
+    <span class="progress-dot done"></span>
+    <span class="progress-dot done"></span>
+    <span class="progress-dot active"></span>
+    <span class="progress-dot"></span>
+  </div>
+
+  <header class="lesson-header">
+    <span class="lesson-badge">Phase 4 · Function</span>
+    <h2>Shopping &amp; Transactions</h2>
+    <p class="lesson-subtitle">Colors, sizes, trying on, prices — survive any Polish store</p>
+  </header>
+
+  <!-- VIDEO -->
+  <div class="video-section">
+    <div class="video-player" id="video-player">
+      <div class="video-placeholder">
+        <div class="icon">🎬</div>
+        <div class="text">Video coming soon — <code>../videos/L13.mp4</code></div>
+      </div>
+    </div>
+    <p class="video-caption">Lesson 13 video · sabiedu on camera</p>
+  </div>
+
+  <!-- COLORS -->
+  <div class="section">
+    <h3>Colors — Kolory</h3>
+    <p>Polish color adjectives agree in gender with the noun they describe. Learn the masculine form first — the feminine and neuter are predictable variations.</p>
+    <div class="vocab-grid">
+      <div class="vocab-card">
+        <div class="pl">Czerwony</div>
+        <div class="ipa">/t͡ʂɛvˈnɨ/</div>
+        <div class="en">red (masc.)</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Niebieski</div>
+        <div class="ipa">/ɲɛbʲɛsʲkʲi/</div>
+        <div class="en">blue (masc.)</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Zielony</div>
+        <div class="ipa">/ʑɛˈlɔnɨ/</div>
+        <div class="en">green (masc.)</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Żółty</div>
+        <div class="ipa">/ˈʐuwtɨ/</div>
+        <div class="en">yellow (masc.)</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Czarny</div>
+        <div class="ipa">/t͡ʂarnɨ/</div>
+        <div class="en">black (masc.)</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Biały</div>
+        <div class="ipa">/ˈbʲawɨ/</div>
+        <div class="en">white (masc.)</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Szary</div>
+        <div class="ipa">/ˈʂarɨ/</div>
+        <div class="en">gray (masc.)</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Brązowy</div>
+        <div class="ipa">/ˈbrɔ̃zɔvɨ/</div>
+        <div class="en">brown (masc.)</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Różowy</div>
+        <div class="ipa">/ruˈʐɔvɨ/</div>
+        <div class="en">pink (masc.)</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Fioletowy</div>
+        <div class="ipa">/fʲɔˈlɛtɔvɨ/</div>
+        <div class="en">purple (masc.)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SIZES -->
+  <div class="section">
+    <h3>Sizes — Rozmiary</h3>
+    <div class="vocab-grid">
+      <div class="vocab-card">
+        <div class="pl">Mały</div>
+        <div class="ipa">/ˈmawɨ/</div>
+        <div class="en">small (masc.)</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Średni</div>
+        <div class="ipa">/ˈɕrɛdɲi/</div>
+        <div class="en">medium (masc.)</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Duży</div>
+        <div class="ipa">/ˈduʐɨ/</div>
+        <div class="en">large (masc.)</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Bardzo duży</div>
+        <div class="ipa">/ˈbardzɔ ˈduʐɨ/</div>
+        <div class="en">extra large (masc.)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CLOTHING -->
+  <div class="section">
+    <h3>Clothing — Ubrania</h3>
+    <div class="vocab-grid">
+      <div class="vocab-card">
+        <div class="pl">Koszula</div>
+        <div class="ipa">/kɔˈʂula/</div>
+        <div class="en">shirt</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Spodnie</div>
+        <div class="ipa">/ˈspɔdɲɛ/</div>
+        <div class="en">trousers (plural only)</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Sukienka</div>
+        <div class="ipa">/suˈkʲɛŋka/</div>
+        <div class="en">dress</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Buty</div>
+        <div class="ipa">/ˈbutɨ/</div>
+        <div class="en">shoes</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Kurtka</div>
+        <div class="ipa">/ˈkurtka/</div>
+        <div class="en">jacket</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Sweter</div>
+        <div class="ipa">/ˈsfɛtɛr/</div>
+        <div class="en">sweater</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SHOPPING PHRASES -->
+  <div class="section">
+    <h3>Shopping Phrases — W Sklepie</h3>
+    <table class="case-table">
+      <thead>
+        <tr>
+          <th>Polish</th>
+          <th>English</th>
+          <th>When to use</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="pl-cell">Szukam + genitive</td>
+          <td>I'm looking for…</td>
+          <td>When you enter and want something specific</td>
+        </tr>
+        <tr>
+          <td class="pl-cell">Czy macie…?</td>
+          <td>Do you have…?</td>
+          <td>Asking if a product exists</td>
+        </tr>
+        <tr>
+          <td class="pl-cell">Czy mogę przymierzyć?</td>
+          <td>Can I try it on?</td>
+          <td>Before buying clothes</td>
+        </tr>
+        <tr>
+          <td class="pl-cell">Ile kosztuje?</td>
+          <td>How much does it cost?</td>
+          <td>When no price tag is visible</td>
+        </tr>
+        <tr>
+          <td class="pl-cell">Za drogo</td>
+          <td>Too expensive</td>
+          <td>Negotiating or reacting to price</td>
+        </tr>
+        <tr>
+          <td class="pl-cell">Taniej</td>
+          <td>Cheaper</td>
+          <td>Asking for a lower price or comparing</td>
+        </tr>
+        <tr>
+          <td class="pl-cell">Wezmę to</td>
+          <td>I'll take it</td>
+          <td>Deciding to buy</td>
+        </tr>
+        <tr>
+          <td class="pl-cell">Czy mogę zapłacić kartą?</td>
+          <td>Can I pay by card?</td>
+          <td>At the register</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- GENITIVE NOTE -->
+  <div class="tip-box">
+    <div class="tip-label">💡 Genitive in Quantities</div>
+    <p>Remember from Lesson 7 — negation flips to genitive. But genitive is also used for quantities: "I want [amount] of [thing]." The noun after the quantity goes into the genitive case. For example: <em>chcę dwóch koszul</em> (I want two shirts), <em>chcę pary butów</em> (I want a pair of shoes). You're already using genitive — you just didn't know it had a name.</p>
+  </div>
+
+  <!-- FULL VOCAB -->
+  <div class="section">
+    <h3>All 30 Vocabulary Words</h3>
+    <div class="vocab-grid">
+      <div class="vocab-card">
+        <div class="pl">Sklep</div>
+        <div class="ipa">/sklɛp/</div>
+        <div class="en">store / shop</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Cena</div>
+        <div class="ipa">/ˈt͡sɛna/</div>
+        <div class="en">price</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Kasy</div>
+        <div class="ipa">/ˈkasɨ/</div>
+        <div class="en">cash registers</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Rabat</div>
+        <div class="ipa">/ˈrabat/</div>
+        <div class="en">discount</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Wyprzedaż</div>
+        <div class="ipa">/vɨpˈʂɛdaʂ/</div>
+        <div class="en">sale / clearance</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Gotówka</div>
+        <div class="ipa">/ɡɔˈtufka/</div>
+        <div class="en">cash</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Karta</div>
+        <div class="ipa">/ˈkarta/</div>
+        <div class="en">card (payment)</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Paragon</div>
+        <div class="ipa">/paˈraɡɔn/</div>
+        <div class="en">receipt</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Torba</div>
+        <div class="ipa">/ˈtɔrba/</div>
+        <div class="en">bag / shopping bag</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Rozmiar</div>
+        <div class="ipa">/ˈrɔzmʲar/</div>
+        <div class="en">size</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Kolekcja</div>
+        <div class="ipa">/kɔˈlɛkt͡sja/</div>
+        <div class="en">collection (of clothes)</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Przymierzalnia</div>
+        <div class="ipa">/pʂɨmʲɛʐalˈɲa/</div>
+        <div class="en">fitting room</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Pasuje</div>
+        <div class="ipa">/paˈsuɛ/</div>
+        <div class="en">it fits</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Nie pasuje</div>
+        <div class="ipa">/ɲɛ paˈsuɛ/</div>
+        <div class="en">it doesn't fit</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Wymiana</div>
+        <div class="ipa">/vɨˈmʲana/</div>
+        <div class="en">exchange</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Zwrot</div>
+        <div class="ipa">/zvrut/</div>
+        <div class="en">return (of goods)</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Dostępny</div>
+        <div class="ipa">/dɔˈstɛpnɨ/</div>
+        <div class="en">available</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Brak</div>
+        <div class="ipa">/brak/</div>
+        <div class="en">out of stock / lack</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Jakość</div>
+        <div class="ipa">/ˈjakɔɕt͡ɕ/</div>
+        <div class="en">quality</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Marka</div>
+        <div class="ipa">/ˈmarka/</div>
+        <div class="en">brand</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Czerwony</div>
+        <div class="ipa">/t͡ʂɛvˈnɨ/</div>
+        <div class="en">red</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Niebieski</div>
+        <div class="ipa">/ɲɛbʲɛsʲkʲi/</div>
+        <div class="en">blue</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Koszula</div>
+        <div class="ipa">/kɔˈʂula/</div>
+        <div class="en">shirt</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Sweter</div>
+        <div class="ipa">/ˈsfɛtɛr/</div>
+        <div class="en">sweater</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Buty</div>
+        <div class="ipa">/ˈbutɨ/</div>
+        <div class="en">shoes</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Kurtka</div>
+        <div class="ipa">/ˈkurtka/</div>
+        <div class="en">jacket</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Szukam</div>
+        <div class="ipa">/ˈʂukam/</div>
+        <div class="en">I'm looking for (+ genitive)</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Wezmę</div>
+        <div class="ipa">/ˈvɛzmɛ/</div>
+        <div class="en">I'll take (+ acc.)</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Za drogo</div>
+        <div class="ipa">/za ˈdrɔɡɔ/</div>
+        <div class="en">too expensive</div>
+      </div>
+      <div class="vocab-card">
+        <div class="pl">Taniej</div>
+        <div class="ipa">/ˈtaɲɛj/</div>
+        <div class="en">cheaper</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="drill-box">
+    <div class="drill-label">🎯 Speaking Drill</div>
+    <div class="drill-text">Roleplay a clothing store purchase. Enter the store, tell the clerk what you're looking for ("<em>Szukam czarnej kurtki</em>"), ask for a size, request to try it on ("<em>Czy mogę przymierzyć?</em>"), ask the price ("<em>Ile kosztuje?</em>"), negotiate ("<em>Za drogo, czy jest taniej?</em>"), and decide ("<em>Wezmę to</em>"). Do the whole exchange aloud without reading — use at least 5 vocab words.</div>
+  </div>
+
+  <footer class="book-footer">
+    <div class="brand">sabiedu · sabiedu.online</div>
+    <div class="meta">Polish Hacked — Lesson 13 · 2026</div>
+  </footer>
+
+</div>
+</body>
+</html>
